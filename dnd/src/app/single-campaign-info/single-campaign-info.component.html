@@ -1,0 +1,20 @@
+<div class='cform'>
+    <form (submit)='onSubmit()' *ngIf='campaign'>
+        <label for="name">Campaign Name:</label>
+        <input type="text" name="name"  required minlength="3" [(ngModel)]='campaign.name'><br>
+        <label for="description">Description:</label><br>
+        <textarea name="description" id="" cols="30" rows="10" [(ngModel)] = 'campaign.description'></textarea><br>
+        <label for="playerCount">Number of Characters in Campaign:</label>
+        <select name="playerCount" id="playerCount" [(ngModel)]='campaign.player_count'>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select><br>
+        <input type="submit" value="Update">
+    </form>
+</div>
+

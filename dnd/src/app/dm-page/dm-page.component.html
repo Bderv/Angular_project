@@ -1,0 +1,19 @@
+<div class="wrapper">
+    <div>
+        <app-navigation></app-navigation>
+    </div>
+    <div class='body'>
+        <div class='leftbod'>
+            <app-campaign-list [campaigns]='campaigns'></app-campaign-list>
+        </div>
+        <div class='rightbod'>
+            <div class='topright'>
+                <button [routerLink]="['/campaigns/new']">Create new Campaign</button>
+            </div>
+            <div class='botright'>
+                <button [routerLink]="['/monster_form']">Create new Monster</button>
+            </div>
+        </div>
+    </div>
+</div>
+

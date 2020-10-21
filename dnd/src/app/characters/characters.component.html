@@ -1,0 +1,24 @@
+<div class="wrapper">
+
+    <div class="list">
+
+        <h1>Your List of Characters: </h1>
+
+        <div *ngFor="let character of characters">
+
+            <a [routerLink]="['/character', character._id]">{{character.name}}</a>
+
+        </div>
+
+    </div>
+
+    <div class="new">
+
+        <button [routerLink] = "['/create']">New Character</button>
+        
+    </div>
+        
+        
+        
+
+</div>
